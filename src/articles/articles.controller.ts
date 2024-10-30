@@ -22,7 +22,7 @@ export class ArticlesController {
   }
 
   @Put(':id/like')
-  toggleLike(@Param('id') id: string, @Body('userId') userId: string) {
+  likeButton(@Param('id') id: string, @Body('userId') userId: string) {
     return this.articlesService.likeButton(+id, userId);
   }
 }
